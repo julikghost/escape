@@ -1,0 +1,427 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* сбрасываем стандартное «bold», 
+шрифт становится таким же как его родительский элемент */
+strong, b {
+font-weight: inherit; 
+}
+
+
+/*СБРОС СТИЛЕЙ*/
+
+@font-face
+{
+ font-family:cubano, sans-serif;
+	src:url('fonts/Cubano.ttf');
+	font-family:Brandon;
+	src:url('fonts/Brandon.otf')
+} /*шрифты*/
+/*размеры для текста*/
+
+.wrap{
+  width:70%;
+  margin: 0 auto;
+}
+/*распологает контент с учетом полей*/
+.part1{
+background-image:url(images/bg/Escape.jpg);
+background-size:cover; 
+width: 100%;
+padding: 44px 0 125px;
+min-height: 620px;/*убрать*/
+}
+.header{
+  width:80%;
+  margin: 0 auto;
+    margin-bottom: 160px;
+}
+
+.header img{
+margin-right: 10px;
+}
+.header h1{
+font-family:cubano, sans-serif;
+font-size: 25px;
+font-weight: bold;
+letter-spacing: 3px;
+color:#fff;
+text-transform: uppercase;
+text-align: left;
+}
+.header nav{
+   float: right;
+ }
+.header a{ 
+  font-family: Brandon;
+  font-size: 18px;
+  color:#fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+}
+.home
+{
+  font-family: Brandon;
+color:#fff;
+  text-align: center;
+}
+.home p:first-child
+{
+font-size: 32px;
+margin-bottom: 50px;
+}
+.home p:nth-child(2)
+{
+font-size: 66px;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 80px;
+}
+.home a
+{
+display:block;
+width:234px;
+text-decoration:none;
+font-size: 23px;
+font-weight: bold;
+color:#fff;
+text-align: center;
+border:3px solid #fff;
+border-radius: 2%;
+padding:19px 58px  21px 58px;
+margin: 0 auto;
+}
+.white,  .skills{
+  background-color:#fff;
+    } /*задаем фон  для дива вайт и скилс*/
+
+  .grey, .clients
+{
+background-color:#fafafa;
+}/*задаем фон  для дива грей*/
+.white .wrap, .grey .wrap, .skills .wrap, .clients .wrap, .black .wrap, .blue .wrap{
+font-family: Brandon;
+margin:0 auto;
+padding: 100px 0 100px 0;
+}/* основные свойства для блоков ,грей и скилс и т .д общие для блоков, c учетом полей*/
+.white img
+{
+ display: block;
+float:right;
+position: relative;
+top:10px;
+margin-right: 280px;
+}
+.white article
+{
+  display: block;
+   width:55%;
+  position: relative;
+}
+.grey img
+{
+  display: block;
+  float: left;
+  position: relative;
+  top:20px;
+ }
+.grey article
+{
+  display: block;
+  width: 55%;
+  margin: auto;
+ }
+
+.white h2, .grey h2{
+    font-size: 60px;
+    color:#000;
+    margin-bottom: 50px;
+}
+.white h2 span, .grey h2 span, .clients h2 span, .black h2 span, .blue h2 span{
+font-weight: 900;
+}
+.white p, .grey p,  .black p {
+font-size: 18px; 
+color: rgb(119, 119, 119);
+line-height: 1.333;
+/*общие свойства для абзацев блоков вайт и грей*/
+}
+.white p:first-of-type, .grey p:first-of-type
+{
+  margin-bottom: 50px;
+}
+
+.skills ul{
+ list-style-type: none;
+ }
+.skills li
+{
+  display: inline-block;
+   width:40%;
+   margin-bottom: 50px;
+   padding-left:-90px;
+  }
+.skills img
+{
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+.skills  h2{
+font-size: 22px;
+margin-bottom: 10px;
+ }
+
+.skills p{
+   font-size: 18px;
+  color: rgb(119, 119, 119);
+  line-height: 1;
+}
+.clients h2 , .clients p
+{
+  text-align: center;
+}
+.clients h2
+{
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+.clients p.see
+{
+  font-size: 22px;
+  color: rgb(119, 119, 119);
+margin-bottom: 40px;
+}
+.man_1, .man_2
+{
+  display: inline-block;
+ }
+.man_1 q, .man_2 q
+{
+  font-size: 26px;
+ color: rgb(119, 119, 119);
+  line-height: 1.1;
+  text-align: center;
+  quotes:"\201c" "\201d";
+  }
+  p.author
+{
+  font-size: 20px;
+   color: rgb(118, 144, 197);
+  line-height: 1.8;
+  text-align: center;
+}
+.man_1 img
+{
+  float: left;
+  position: relative;
+  margin-bottom: 50px;
+}
+.man_1 article{
+  display: inline-block;
+  float: right;
+}
+.man_1 article, .man_2 article
+{
+  
+  position: relative;
+  width: 70%;
+ padding: 30px 0 40px 0;
+   text-align:center;
+    background-color: #fff;
+  border: 2px solid #f1f1f1;
+  box-shadow: 2px 2px 4px #888;
+}
+
+.man_1 article::before , .man_1 article::after{
+    content: ''; 
+    position: absolute;
+    left: -40px;
+    top: 70px;
+   border: 20px solid transparent; 
+   border-right: 20px solid #f1f1f1;
+   }
+ .man_1 article::after {
+    border-right: 20px solid #fff;
+    left: -38px; 
+   }
+   .man_2 img
+{
+  float: right;
+  position: relative;
+  margin-left:  50px;
+}
+.man_2 article
+{
+  display: inline-block;
+  float: left;
+}
+.man_2 article::before , .man_2 article::after{
+    content: ''; 
+    position: absolute;
+    right: -40px;
+    top: 70px;
+   border: 20px solid transparent; 
+   border-left: 20px solid #f1f1f1;
+   }
+ .man_2 article::after {
+    border-left: 20px solid #fff;
+    right: -38px; 
+   }
+
+.logos .wrap
+ {
+padding: 60px 0  60px 0;
+text-align: center;
+ }
+.logos li
+{
+  display: inline-block;
+  margin-left:40px;
+ }
+.black{
+  background: #000;
+  text-align: center;
+}
+
+.black h2, .blue h2{  
+    font-size: 60px;
+    color:#fff;
+    
+   line-height: 1.2; 
+}
+.black p.up
+{
+  margin-bottom: 60px;
+}
+.gallery li
+{
+display: inline-block;
+margin:0 auto;
+
+}
+.galery img{
+  display: inline-block;
+}
+.gallery p{
+   color:#fff;
+}
+ .down p{
+  color:#fff;
+  text-align: center;
+}
+
+.blue {
+  background:#7690c5;
+} /* это допишу*/
+
+/* из  psh
+}
+.Name___Title {
+  font-size: 18px;
+  font-family: "BrandonGrotesque";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 2.778;
+  text-align: center;
+
+}
+.Title {
+  font-size: 60px;
+  font-family: "BrandonGrotesque";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  
+}
+
+.Description {
+  font-size: 18px;
+  font-family: "BrandonGrotesque";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+ 
+}
+.Your_Name__ {
+  font-size: 18px;
+  font-family: "BrandonGrotesque";
+  color: rgb(187, 187, 187);
+  line-height: 1.2;
+  text-align: left;
+ 
+}
+._416__555_0000 {
+  font-size: 18px;
+  font-family: "BrandonGrotesque";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+ 
+}
+.©_2014_Escape_by_FreebiesXpress_•_Made_In_Toronto {
+  font-size: 16px;
+  font-family: "BrandonGrotesque";
+  color: rgb(255, 255, 255);
+  line-height: 1.375;
+  text-align: left;
+
+}
+.Your_E_mail__ {
+  font-size: 18px;
+  font-family: "BrandonGrotesque";
+  color: rgb(187, 187, 187);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 734.679px;
+  top: 4052.2px;
+  z-index: 28;
+}
+*/
