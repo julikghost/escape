@@ -56,8 +56,6 @@ font-weight: inherit;
 
 @font-face
 {
- font-family:cubano, sans-serif;
-	src:url('fonts/Cubano.ttf');
 	font-family:Brandon;
 	src:url('fonts/Brandon.otf')
 } /*шрифты*/
@@ -73,57 +71,47 @@ background-image:url(images/bg/Escape.jpg);
 background-size:cover; 
 width: 100%;
 padding: 44px 0 125px;
-min-height: 620px;/*убрать*/
 }
 .header{
-  width:80%;
-  margin: 0 auto;
-    margin-bottom: 160px;
-}
+width: 80%;
+margin:auto;
+  }
+  .menu {
+ margin-bottom: 125px;
 
-.header img{
-margin-right: 10px;
+  }
+.menu img{
+  display: inline;
+    width: 147px;
 }
-.header h1{
-font-family:cubano, sans-serif;
-font-size: 25px;
-font-weight: bold;
-letter-spacing: 3px;
-color:#fff;
-text-transform: uppercase;
-text-align: left;
-}
-.header nav{
-   float: right;
+.menu  nav{
+ width: 410px;
+ float: right;
  }
-.header a{ 
+.menu a{ 
   font-family: Brandon;
   font-size: 18px;
   color:#fff;
   text-decoration: none;
   text-align: center;
-  padding: 15px 15px 15px 15px;
+  padding:0px 14px 0 14px;
 }
-.home
-{
+.home{
   font-family: Brandon;
 color:#fff;
   text-align: center;
 }
-.home p:first-child
-{
+.home p {
 font-size: 32px;
 margin-bottom: 50px;
-}
-.home p:nth-child(2)
-{
+} /*абзац*/
+.home h1{
 font-size: 66px;
 font-weight: bold;
 text-transform: uppercase;
 margin-bottom: 80px;
-}
-.home a
-{
+} /*заголовок*/
+.home a {
 display:block;
 width:234px;
 text-decoration:none;
@@ -135,48 +123,31 @@ border:3px solid #fff;
 border-radius: 2%;
 padding:19px 58px  21px 58px;
 margin: 0 auto;
-}
+}/*кнопка*/
 .white,  .skills{
   background-color:#fff;
     } /*задаем фон  для дива вайт и скилс*/
-
-  .grey, .clients
-{
+  .grey, .clients {
 background-color:#fafafa;
 }/*задаем фон  для дива грей*/
 .white .wrap, .grey .wrap, .skills .wrap, .clients .wrap, .black .wrap, .blue .wrap{
 font-family: Brandon;
-margin:0 auto;
 padding: 100px 0 100px 0;
 }/* основные свойства для блоков ,грей и скилс и т .д общие для блоков, c учетом полей*/
-.white img
-{
- display: block;
-float:right;
-position: relative;
-top:10px;
-margin-right: 280px;
+.white article, .grey article{
+    display: inline-block;
+  width:70%;
+ }
+ .fork, .person {
+width: 30%;
+ }
+ .fork {
+float: right;
+text-align: center;
 }
-.white article
-{
-  display: block;
-   width:55%;
-  position: relative;
-}
-.grey img
-{
-  display: block;
+.person{
   float: left;
-  position: relative;
-  top:20px;
- }
-.grey article
-{
-  display: block;
-  width: 55%;
-  margin: auto;
- }
-
+  }
 .white h2, .grey h2{
     font-size: 60px;
     color:#000;
@@ -191,73 +162,91 @@ color: rgb(119, 119, 119);
 line-height: 1.333;
 /*общие свойства для абзацев блоков вайт и грей*/
 }
-.white p:first-of-type, .grey p:first-of-type
-{
+.white p:first-of-type, .grey p:first-of-type{
   margin-bottom: 50px;
 }
 
 .skills ul{
  list-style-type: none;
+text-align: center;
  }
 .skills li
 {
   display: inline-block;
-   width:40%;
-   margin-bottom: 50px;
-   padding-left:-90px;
-  }
-.skills img
-{
-  display: inline-block;
-  float: left;
-  margin-right: 20px;
+   width:35%;
+   text-align: left;
+     }
+.skills li:nth-child(1){
+background: url(images/ico/ico1.png) no-repeat left top;
+background-size: 75px 75px;
+padding: 0 0 0 90px; /* Бэкграунд+ отступ до текста*/
+}
+.skills li:nth-child(2){
+background: url(images/ico/ico2.png) no-repeat left top;
+padding: 0 0 0 90px;
+}
+.skills li:nth-child(3){
+background: url(images/ico/ico3.png) no-repeat left top;
+padding: 0 0 0 90px;
+}
+.skills li:nth-child(4){
+background: url(images/ico/ico4.png) no-repeat left top;
+padding: 0 0 0 90px;
+}
+.skills li:nth-child(5){
+background: url(images/ico/ico5.png) no-repeat left top;
+padding: 0 0 0 90px;
+}
+.skills li:nth-child(6){
+background: url(images/ico/ico6.png)  no-repeat left top;
+padding: 0 0 0 90px;
 }
 .skills  h2{
 font-size: 22px;
 margin-bottom: 10px;
  }
 
-.skills p{
+.skills li p{
    font-size: 18px;
   color: rgb(119, 119, 119);
   line-height: 1;
-}
-.clients h2 , .clients p
-{
+  margin-bottom: 55px;
+  }
+
+.skills li:nth-child(3) p{
+   font-size: 18px;
+  color: rgb(119, 119, 119);
+  line-height: 1;
+   }
+.clients h2 , .clients p{
   text-align: center;
 }
-.clients h2
-{
+.clients h2{
   font-size: 60px;
   margin-bottom: 15px;
 }
-.clients p.see
-{
+.clients p.see{
   font-size: 22px;
   color: rgb(119, 119, 119);
 margin-bottom: 40px;
 }
-.man_1, .man_2
-{
+.man_1, .man_2{
   display: inline-block;
  }
-.man_1 q, .man_2 q
-{
+.man_1 q, .man_2 q{
   font-size: 26px;
  color: rgb(119, 119, 119);
   line-height: 1.1;
   text-align: center;
   quotes:"\201c" "\201d";
   }
-  p.author
-{
+  p.author{
   font-size: 20px;
    color: rgb(118, 144, 197);
   line-height: 1.8;
   text-align: center;
 }
-.man_1 img
-{
+.man_1 img{
   float: left;
   position: relative;
   margin-bottom: 50px;
@@ -266,10 +255,8 @@ margin-bottom: 40px;
   display: inline-block;
   float: right;
 }
-.man_1 article, .man_2 article
-{
-  
-  position: relative;
+.man_1 article, .man_2 article /* ттутучка*/{
+    position: relative;
   width: 70%;
  padding: 30px 0 40px 0;
    text-align:center;
@@ -289,7 +276,7 @@ margin-bottom: 40px;
  .man_1 article::after {
     border-right: 20px solid #fff;
     left: -38px; 
-   }
+   } /*треугольник */
    .man_2 img
 {
   float: right;
@@ -314,30 +301,49 @@ margin-bottom: 40px;
     right: -38px; 
    }
 
-.logos .wrap
- {
+.logos .wrap {
 padding: 60px 0  60px 0;
 text-align: center;
  }
-.logos li
-{
+ .logos ul{
+  list-style-type: none;
+ }
+.logos li{
   display: inline-block;
   margin-left:40px;
  }
 .black{
-  background: #000;
+  background: #111;
   text-align: center;
 }
 
 .black h2, .blue h2{  
     font-size: 60px;
     color:#fff;
-    
-   line-height: 1.2; 
+       line-height: 1.2; 
 }
-.black p.up
-{
+.black h2{
+  margin-bottom: 18px;
+}
+.black p.up{
   margin-bottom: 60px;
+}
+.black i {
+  color:#fff;
+  border:3px solid #fff;
+  border-radius: 50% 50%;
+  padding: 10px 10px 10px 10px;
+}
+.black  .fa-facebook{
+   color:#fff;
+  border:3px solid #fff;
+  border-radius: 50% 50%;
+  padding: 10px 12px 10px 12px;
+}
+.gallery ul
+{
+list-style-type: none;
+  margin-bottom: 45px;
 }
 .gallery li
 {
@@ -352,76 +358,78 @@ margin:0 auto;
    color:#fff;
 }
  .down p{
-  color:#fff;
+ color: rgb(187, 187, 187);
   text-align: center;
 }
-
 .blue {
   background:#7690c5;
-} /* это допишу*/
+}
+ .blue h2{
+  margin-bottom: 30px;
+}
+.blue .social p{
+  color:#fff;
+  margin-bottom: 50px;
+}
+.social, .form{
+  display: inline-block;
+  width: 50%;
+}
+.social li
+{
+  display: inline-block;
+  width: 35%;
+   margin-bottom: 40px;
+}
+.social a 
+{
+  text-decoration: none;
+  color:#fff;
+  }
+.social i{
+  margin-right: 14px;
+  font-size: 30px;
+}
+.form{
+  float: right;
+  text-align: left;
+}
 
-/* из  psh
+.form input, .form textarea{
+display: block;
+width:458px;
+border-radius: 2%;
 }
-.Name___Title {
-  font-size: 18px;
-  font-family: "BrandonGrotesque";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 2.778;
-  text-align: center;
-
+/* растояние между полями*/
+.form input {
+min-height:50px;
+} 
+.form input[type="text"]{
+  margin-bottom: 29px;
 }
-.Title {
-  font-size: 60px;
-  font-family: "BrandonGrotesque";
-  color: rgb(255, 255, 255);
-  line-height: 1.2;
-  text-align: left;
-  
+.form input[type="email"]{
+  margin-bottom: 20px;
 }
-
-.Description {
-  font-size: 18px;
-  font-family: "BrandonGrotesque";
-  color: rgb(255, 255, 255);
-  line-height: 1.2;
-  text-align: left;
- 
+.form textarea
+{
+min-height:210px;
+resize: none; /* не меняет размер поля  */
+} 
+.form input[type="text"]::placeholder, .form input[type="email"]::placeholder, .form textarea::placeholder
+{
+font-family: "Brandon";
+font-size: 18px;
+line-height: 1.2;
+color: rgb(187, 187, 187);
+text-align: left;
+padding:16px 0  0 18px;/*отступ текста от края формы */
+  }
+.footer .wrap {
+  border-top:1px solid #87a0d2;
+    padding: 30px 0 33px 0;
 }
-.Your_Name__ {
-  font-size: 18px;
-  font-family: "BrandonGrotesque";
-  color: rgb(187, 187, 187);
-  line-height: 1.2;
-  text-align: left;
- 
-}
-._416__555_0000 {
-  font-size: 18px;
-  font-family: "BrandonGrotesque";
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: left;
- 
-}
-.©_2014_Escape_by_FreebiesXpress_•_Made_In_Toronto {
+.footer .wrap p{
+ text-align: center;
   font-size: 16px;
-  font-family: "BrandonGrotesque";
   color: rgb(255, 255, 255);
-  line-height: 1.375;
-  text-align: left;
-
 }
-.Your_E_mail__ {
-  font-size: 18px;
-  font-family: "BrandonGrotesque";
-  color: rgb(187, 187, 187);
-  line-height: 1.2;
-  text-align: left;
-  position: absolute;
-  left: 734.679px;
-  top: 4052.2px;
-  z-index: 28;
-}
-*/
