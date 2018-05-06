@@ -51,7 +51,6 @@ strong, b {
 font-weight: inherit; 
 }
 
-
 /*СБРОС СТИЛЕЙ*/
 
 @font-face
@@ -72,20 +71,19 @@ background-size:cover;
 width: 100%;
 padding: 44px 0 125px;
 }
-.header{
-width: 80%;
-margin:auto;
-  }
+
   .menu {
+    display: block;
  margin-bottom: 150px;
   }
 .menu img{
-  display: inline;
     width: 147px;
 }
 .menu  nav{
  width: 410px;
  float: right;
+ height: 34px;
+line-height: 34px;
  }
 .menu a{ 
   font-family: Brandon;
@@ -112,7 +110,8 @@ margin-bottom: 80px;
 } /*заголовок*/
 .home a {
 display:block;
-width:234px;
+width:100%;
+max-width:234px;
 text-decoration:none;
 font-size: 23px;
 font-weight: bold;
@@ -133,16 +132,17 @@ background-color:#fafafa;
 font-family: Brandon;
 padding: 100px 0 100px 0;
 }/* основные свойства для блоков ,грей и скилс и т .д общие для блоков, c учетом полей*/
+
 .white article, .grey article{
-    display: inline-block;
-  width:70%;
+  display: inline-block;
+    width:70%;
  }
  .fork, .person {
 width: 30%;
  }
  .fork {
 float: right;
-text-align: center;
+margin: auto;
 }
 .person{
   float: left;
