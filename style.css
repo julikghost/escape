@@ -72,7 +72,7 @@ width: 100%;
 padding: 44px 0 125px;
 }
 
-  .menu {
+.menu {
     display: block;
  margin-bottom: 150px;
   }
@@ -128,7 +128,7 @@ margin: 0 auto;
   .grey, .clients {
 background-color:#fafafa;
 }/*задаем фон  для дива грей*/
-.white .wrap, .grey .wrap, .skills .wrap, .clients .wrap, .black .wrap, .blue .wrap{
+.white , .grey , .skills , .clients , .black , .blue {
 font-family: Brandon;
 padding: 100px 0 100px 0;
 }/* основные свойства для блоков ,грей и скилс и т .д общие для блоков, c учетом полей*/
@@ -168,35 +168,42 @@ line-height: 1.333;
 .skills ul{
  list-style-type: none;
 text-align: center;
- }
-.skills li
-{
-  display: inline-block;
-   width:35%;
-   text-align: left;
+
      }
-.skills li:nth-child(1){
+.list1, .list2{
+  display: inline-block;
+     }
+.list1 li,.list2 li
+{
+  max-width: 385px;
+   width:70%;
+   text-align: left;
+          }
+     .list1{
+      margin-right: 75px;
+     }
+.list1 li:nth-child(1){
 background: url(images/ico/ico1.png) no-repeat left top;
 background-size: 75px 75px;
 padding: 0 0 0 90px; /* Бэкграунд+ отступ до текста*/
 }
-.skills li:nth-child(2){
+.list1 li:nth-child(2){
 background: url(images/ico/ico2.png) no-repeat left top;
 padding: 0 0 0 90px;
 }
-.skills li:nth-child(3){
+.list1 li:nth-child(3){
 background: url(images/ico/ico3.png) no-repeat left top;
 padding: 0 0 0 90px;
 }
-.skills li:nth-child(4){
+.list2 li:nth-child(1){
 background: url(images/ico/ico4.png) no-repeat left top;
 padding: 0 0 0 90px;
 }
-.skills li:nth-child(5){
+.list2 li:nth-child(2){
 background: url(images/ico/ico5.png) no-repeat left top;
 padding: 0 0 0 90px;
 }
-.skills li:nth-child(6){
+.list2 li:nth-child(3){
 background: url(images/ico/ico6.png)  no-repeat left top;
 padding: 0 0 0 90px;
 }
@@ -245,11 +252,14 @@ margin-bottom: 40px;
   line-height: 1.8;
   text-align: center;
 }
+.man_1{
+   margin-bottom: 50px;
+}
+
 .man_1 img{
   float: left;
   position: relative;
-  margin-bottom: 50px;
-}
+ }
 .man_1 article{
   display: inline-block;
   float: right;
@@ -300,7 +310,7 @@ margin-bottom: 40px;
     right: -38px; 
    }
 
-.logos .wrap {
+.logos {
 padding: 60px 0  60px 0;
 text-align: center;
  }
@@ -344,11 +354,8 @@ text-align: center;
 list-style-type: none;
   margin-bottom: 45px;
 }
-.gallery li
-{
+.gallery li{
 display: inline-block;
-margin:0 auto;
-
 }
 .galery img{
   display: inline-block;
@@ -400,7 +407,8 @@ margin:0 auto;
 
 .form input, .form textarea{
 display: block;
-width:458px;
+width:100%;
+max-width: 458px;
 border-radius: 2%;
 }
 /* растояние между полями*/
@@ -427,11 +435,11 @@ color: rgb(187, 187, 187);
 text-align: left;
 padding:16px 0  0 18px;/*отступ текста от края формы */
   }
-.footer .wrap {
+.footer {
   border-top:1px solid #87a0d2;
     padding: 30px 0 33px 0;
 }
-.footer .wrap p{
+.footer  p{
  text-align: center;
   font-size: 16px;
   color: rgb(255, 255, 255);
